@@ -1,0 +1,5 @@
+<div class="container">
+    <h2>User List Page</h2>
+    <div *ngFor="let user of users" [routerLink]="['detail', user.name]">{{user.name}}</div>
+    <router-outlet></router-outlet>
+</div>
