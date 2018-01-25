@@ -8,6 +8,11 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class AppComponent {
   courses: any[];
+  titleStyle = {
+    'color' : 'lightblue',
+    'font-size' : '4em',
+    'text-align': 'center'
+  };
   constructor(db: AngularFireDatabase) {
     // reading list of objects
     db.list('/courses/')
